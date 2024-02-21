@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <style>
+   *{
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:"Arial",sans-serif;
+    
+  }
+  .hero{
+    background-color:#f8f8f8;
+    overflow: hidden;
+    background-color:rgba(207, 64,159, 0.652);
+    background-repeat: repeat;
+    background-size: cover;
+   
+  } 
+  
+  .heading h1{
+    color:rgb(181, 28, 146);
+    font-size: 55px;
+    text-align:center;
+    margin-top:35px;
+  }
+  .container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    margin:65px auto;
+    
+  }
+  .hero-content{
+    flex:1;
+    width:60px;
+    margin:0px 25px;
+    animation: fadeInUp 2s ease;
+  }
+  .hero-content h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+    color:rgb(170, 26, 124);
+  }
+  .hero-content h3{
+    color:rgb(36, 25, 33);
+  }
+  .hero-content p{
+    font-size: 20px;
+    line-height:1.5;
+    margin-bottom: 40px;
+    color:rgb(36, 25, 33);
+  }
+  
+  .hero-image{
+    flex:1;
+    width:50%;
+    margin: 1px;
+   animation: fadeInRight 2s ease;
+  }  
+  img{
+    width:50%;
+    height: 50%;
+    border-radius:1em;
+  
+    
+  }
+  @media screen and (max-width:768px){
+    .heading h1{
+        font-size:px;
+        margin-top:30px;
+    }
+    .hero{
+        margin:px;
+    }
+    .container{
+        width:100%;
+        flex-direction:column;
+        margin:0px;
+        padding:0px 40px;
+    }
+    .hero-content{
+        width:100%;
+        margin:35px 0px;
+    }
+    .hero-content p{
+        font-size:20px;
+        margin-bottom: 20px;
+    }
+    .hero-image{
+        width:50%;
+       
+  }
+}
+  @keyframes fadeInUp{
+    0%{
+        opacity:0;
+        transform: translate(50px);
+    }
+    100%{
+        opacity:1;
+        transform: translate(0px);
+    }
+  }
+  @keyframes fadeInRight{
+    0%{
+        opacity:0;
+        transform: translate(50px);
+    }
+    100%{
+        opacity:1;
+        transform: translate(0px);
+    }
+  }
+  
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="heading">
+      <h1>My Projects</h1>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <h2>Project 1</h2>
+        <h3>CUSTOMER SHOPPING TRENDS</h3>
+        <p>Customer shoppping trends dataset encompasses various features related to customer shopping preferences, gathering essential information for businesses seeking to enhance their understanding of their customer base. The features include customer age,gender,purchase amount,preffeered payment methods,frequency of purchases,and feedback ratings.Additionally, data on the type of items purchased,shopping frequency,preffered shopping seasons, and interactions with promotional offers is included.</p>
+      </div>
+      <div class="hero-image">
+        <a href="p1.jpg"><img src="p1.jpg"></a>
+      </div>
+    </div>
+  </section><section class="hero">
+    
+    <div class="container">
+      <div class="hero-content">
+        <h2>Project 2</h2>
+        <h3>FINANCE TRACKER</h3>
+        <p>
+          The finance tracker is a web-based application designed to help users manage their personal finances efficiently.It provides features for tracking  income,expenses,budgeting, and income,expenses, budgeting, and generating reports to analyze spending patterns.<br>
+          Users can create accounts and securely log in to access their financial data.
+        </p>     
+      </div>
+      <div class="hero-image">
+        <a href="p2.jpg"><img src="p2.jpg"></a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
